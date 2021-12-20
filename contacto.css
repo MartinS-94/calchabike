@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+main{
+    background-color:rgb(186, 189, 150,0.5);
+    height: 1300px;
+    margin-top: 90px;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    height: 90px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap: 120px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li{
+    display:inline-flex;
+    align-items:center;
+}
+
+nav li a:hover{
+    color:orangered;
+    transform: scale(1.1);
+}
+
+main h2{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:40px;
+    color: rgb(34, 92, 37);
+}
+
+section.contactoForm{
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    background-color: rgba(248, 231, 210, 0.8);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+section.contactoForm input, section.contactoForm label{
+    display: block;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    width: 85%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+}
+section.contactoForm input[type="submit"]{
+    background-color: rgb(186, 189, 150,0.5);
+    border-bottom: 2px solid #5c4401;
+}
+
+section.contactoForm input[type="text"], section.contactoForm input[type="tel"], section.contactoForm input[type="email"]{
+    border-bottom: 2px solid #5c4401;
+} 
+
+.botonS:hover{
+    transform: scale(1.05);
+}
+
+
+
+footer{
+    padding:20px;
+    text-align:center;
+    background-color: rgb(0, 0, 0);
+    width:100%;
+}
+
+footer ul{
+    list-style:none;
+    display:inline-flex;
+    align-items:center;
+    gap: 45px;
+}
+
+.redes{
+    width: 60px;
+}
+
+.redes:hover{
+    transform: scale(1.2);
+}
+
+.logoFooter:hover{
+    transform: scale(1.1);
+}
