@@ -67,11 +67,16 @@ section.experiencias{
 section.experiencias div.titulo{
     padding: 20px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
     font-size:40px;
     color: rgb(34, 92, 37);
-    grid-column: 2/3;
+    grid-column: 1/4;
     grid-row: 1/2;
+}
 
+.titulo:hover{
+    transform: scale(1.1);
+    transition: 2s;
 }
 
 section.experiencias div.experiencia1{
@@ -95,6 +100,10 @@ section.experiencias div.experiencia3{
     grid-row: 2/3;
 }
 
+section.experiencias img:hover{
+    transform: translate(75px);
+    transition: 2s;
+}
 
 section.informacion{
     text-align:center;

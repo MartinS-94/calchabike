@@ -57,6 +57,11 @@ main h2{
     color: rgb(34, 92, 37);
 }
 
+h2:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
 section.contactoForm{
     text-align: center;
     padding: 20px;
@@ -90,8 +95,6 @@ section.contactoForm input[type="text"], section.contactoForm input[type="tel"],
 .botonS:hover{
     transform: scale(1.05);
 }
-
-
 
 footer{
     padding:20px;
