@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* nav */
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+nav li a:hover{
+    color:orangered;
+    transform: scale(1.1);
+}
+
+/* nav - fin */
+
+/* body */
+
+body{
+    background-color:rgb(186, 189, 150,0.5);
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: rgb(34, 92, 37);
+    padding: 20px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    color: rgb(34, 92, 37);
+    padding: 20px;
+}
+
+/* body - fin */
+
+/* form - inicio */
+
+section.informacion{
+    text-align:center;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: rgba(248, 231, 210, 0.8);
+    font-family: 'Roboto', sans-serif;
+}
+
+.tForm{
+    padding-top: 20px;
+}
+section.informacion input, section.informacion label{
+    display: block;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    width: 85%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+}
+
+section.informacion input[type="text"], section.informacion input[type="email"]{
+    border-bottom: 2px solid #5c4401;
+} 
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+/* form - fin */
+
+
+
+/* footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+footer ul{
+    list-style:none;
+    display:inline-flex;
+    align-items:center;
+    gap: 45px;
+}
+
+.redes{
+    width: 60px;
+}
+
+.redes:hover{
+    transform: scale(1.2);
+}
+
+.logoFooter:hover{
+    transform: scale(1.1);
+}
+
+/* footer - fin */

@@ -5,61 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalchaBike</title>
-    <link rel="stylesheet" href="./index.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
-    <div class="grid">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><img src="media/logo.jpg" alt="logo"></a></li>
-                    <li><a href="destinos.html">Destinos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="preguntas.html">Preguntas</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+    <header>
+        <nav class="navbar navbar-expand-md" style="background-color: black;">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="./media/logo.jpg" alt="logo"></a></li>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: rgb(186, 189, 150,0.5);">
+                <span class="navbar-toggler-icon" style="background-color: black;"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinos.html">Destinos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="preguntas.html">Preguntas</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="fotoprincipal">
-                <img src="./media/principal.jpg" alt="Portada"  id="fotoprincipal">
-                <!-- <h1 class="titulo">CalchaBike</h1> -->
-            </section>
-            <section class="experiencias">
-                <div class="titulo"><h1>¡Experiencias!</h1></div>
-                <div class="experiencia1">
-                    <img src="./media/persona1.jpg" alt="foto de persona1"> <!--estas deben ir una a la par de la otra-->
-                    <p class="experiencia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis suscipit necessitatibus quia doloribus sequi, recusandae laborum nostrum ab neque doloremque aperiam blanditiis perspiciatis, nobis sit a odio maxime ipsum beatae?</p>
-                </div>
-                <div class="experiencia2">
-                    <img src="./media/persona2.jpg" alt="foto de persona2"> <!--estas deben ir una a la par de la otra-->
-                    <p class="experiencia">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis excepturi sunt ullam ad aliquid tenetur deleniti doloribus possimus. Vero iste incidunt a eligendi aut delectus sunt cupiditate dolores harum esse.</p>
-                </div>
-                <div class=experiencia3>
-                    <img src="./media/persona1.jpg" alt="foto de persona2"> <!--estas deben ir una a la par de la otra-->
-                    <p class="experiencia">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis excepturi sunt ullam ad aliquid tenetur deleniti doloribus possimus. Vero iste incidunt a eligendi aut delectus sunt cupiditate dolores harum esse.</p>
-                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <img class="col-12" src="./media/principal.jpg" alt="Portada">
+            <!-- <h1 class="titulo">CalchaBike</h1> -->
+        </section>
+        <div class="experiencias container">
+            <div class="row">
+                <div class="text-center col-12"><h1>¡Experiencias!</h1></div>
                 
-            </section><br><br>
-            <section class="informacion">
-                <h2>¿Queres recibir mas información?</h2>
+                <div class="card col-xs-12 col-sm-4 col-md-4">
+                    <img class="card-img-top" src="./media/persona1.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Alejandra P.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia eos placeat ad quidem neque exercitationem ea perferendis, adipisci rem!</p>
+                    </div>
+                </div>
+
+                <div class="card col-xs-12 col-sm-4 col-md-4">
+                    <img class="card-img-top" src="./media/persona2.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Alejandra P.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia eos placeat ad quidem neque exercitationem ea perferendis, adipisci rem!</p>
+                    </div>
+                </div>
+
+                <div class="card col-xs-12 col-sm-4 col-md-4">
+                    <img class="card-img-top" src="./media/persona1.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Alejandra P.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia eos placeat ad quidem neque exercitationem ea perferendis, adipisci rem!</p>
+                    </div>
+            </div>
+
+            
+        </div><br><br>
+        <section class="informacion container col-xs-12 col-md-6 col-sm-12">
+            <div class="row"></div>
+                <h2 class="tForm">¿Queres recibir mas información?</h2>
                 <h2>¡Subscríbete!</h2><br>
                 <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
                     <label for="name">Nombre:</label><br>
                     <input type="text" name="name"><br>
                     <label for="email">E-mail:</label><br>
                     <input type="email" name="email" required><br><br>
-                    <input class="botonS" type="submit" value="Subscribir">
+                    <button type="button" class="btn btn-success btn-lg">Subscribir</button>
                 </form><br><br><br>
-        </main>
-        <footer>
-            <div id="redesSociales">
-                <ul>
-                    <li><a href="index.html"><img class="logoFooter" src="media/logo.jpg" alt="logo"></a></li>
-                    <li><a href="https://www.facebook.com/pages/category/Sports---Recreation/CalchaBike-Cicloturismo-100533291534790/"><img class="redes" src="./media/fb.png" alt="Facebook"></li></a>
-                    <li><a href="https://www.instagram.com/calchabike/?hl=es"><img class="redes" src="./media/ig.png" alt="Instagram"></li></a>
-                </ul>
-        </footer>
-    </div>
+            </div>
+    </main>
+    <footer>
+        <div id="redesSociales container col-12">
+            <ul>
+                <li><a href="index.html"><img class="logoFooter" src="media/logo.jpg" alt="logo"></a></li>
+                <li><a href="https://www.facebook.com/pages/category/Sports---Recreation/CalchaBike-Cicloturismo-100533291534790/"><img class="redes" src="./media/fb.png" alt="Facebook"></li></a>
+                <li><a href="https://www.instagram.com/calchabike/?hl=es"><img class="redes" src="./media/ig.png" alt="Instagram"></li></a>
+            </ul>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
 </body>
 </html>
