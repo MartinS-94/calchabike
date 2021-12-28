@@ -22,7 +22,20 @@ nav li a:hover{
 
 /* nav - fin */
 
-/* body */
+
+/* foto portada y titulo */
+/* .portada { 
+    /* position: relative; 
+} 
+/* .titulo { 
+    position: absolute;
+    text-align: center;
+    top: 40%; 
+    width: 100%; 
+    color: rgb(34, 92, 37,0.5); !important
+}  */ 
+
+/* body generales*/
 
 body{
     background-color:rgb(186, 189, 150,0.5);
@@ -40,6 +53,10 @@ h2{
     font-size:40px;
     color: rgb(34, 92, 37);
     padding: 20px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
 }
 
 /* body - fin */
@@ -69,7 +86,7 @@ section.informacion input, section.informacion label{
     border-radius: 3px;
 }
 
-section.informacion input[type="text"], section.informacion input[type="email"]{
+section.informacion input[type="text"], section.informacion input[type="email"], section.informacion input[type="tel"]{
     border-bottom: 2px solid #5c4401;
 } 
 
@@ -79,7 +96,29 @@ section.informacion input[type="text"], section.informacion input[type="email"]{
 
 /* form - fin */
 
+/* pagina "Destinos" */
 
+.difPrincipiante{
+    color:rgb(53, 168, 0);
+    font-size: 20px;
+}
+
+.difMedia{
+    color: orange;
+    font-size: 20px;
+}
+
+.difAvanzada{
+    color:red;
+    font-size: 20px;
+}
+
+.dificultad:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+/* Fin pagina "Destino" */
 
 /* footer */
 
@@ -112,3 +151,7 @@ footer ul{
 }
 
 /* footer - fin */
+
+
+
+

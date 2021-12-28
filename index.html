@@ -7,6 +7,7 @@
     <title>CalchaBike</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
             </button>
 
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Inicio</a></li>
@@ -41,12 +42,12 @@
 
     <main>
         <section>
-            <img class="col-12" src="./media/principal.jpg" alt="Portada">
-            <!-- <h1 class="titulo">CalchaBike</h1> -->
+            <img class="portada col-12 text-center img-responsive" src="./media/principal.jpg" alt="Portada">
+            <h1 class="titulo col-12">CalchaBike</h1>
         </section>
         <div class="experiencias container">
             <div class="row">
-                <div class="text-center col-12"><h1>¡Experiencias!</h1></div>
+                <div class="text-center col-12 animate__animated animate__heartBeat animate__delay-1s animate__repeat-3"><h2 style="font-size: 50px;"><strong>¡Experiencias!</strong></h2></div>
                 
                 <div class="card col-xs-12 col-sm-4 col-md-4">
                     <img class="card-img-top" src="./media/persona1.jpg" alt="Card image">
@@ -74,18 +75,18 @@
 
             
         </div><br><br>
-        <section class="informacion container col-xs-12 col-md-6 col-sm-12">
+        <section class="informacion container col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-6" style="padding-bottom: 30px; padding-top: 30px;">
             <div class="row"></div>
-                <h2 class="tForm">¿Queres recibir mas información?</h2>
-                <h2>¡Subscríbete!</h2><br>
+                <h2 class="tForm"><strong>¿Queres recibir mas información?</strong></h2>
+                <h2><strong>¡Subscríbete!</strong></h2><br>
                 <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
                     <label for="name">Nombre:</label><br>
                     <input type="text" name="name"><br>
                     <label for="email">E-mail:</label><br>
                     <input type="email" name="email" required><br><br>
-                    <button type="button" class="btn btn-success btn-lg">Subscribir</button>
-                </form><br><br><br>
-            </div>
+                    <button type="button" class="btn btn-success btn-lg">Subscribir</button><br><br>
+                </form>
+        </section>
     </main>
     <footer>
         <div id="redesSociales container col-12">
@@ -100,6 +101,5 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-
 </body>
 </html>

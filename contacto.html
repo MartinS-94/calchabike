@@ -7,7 +7,9 @@
     <title>CalchaBike</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./estilos.css">
+
 </head>
 <body>
     <header>
@@ -21,7 +23,7 @@
             </button>
 
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Inicio</a></li>
@@ -43,26 +45,25 @@
 <!-- form -->
 
 <main>
-    <section class="informacion container col-md-6 col-xs-10 col-sm-10" style="margin-top: 40px;">
+    <section class="informacion container col-sm-9 col-md-8 col-lg-7 col-xl-6 animate__animated animate__zoomIn" style="margin-top: 40px;">
         <div class="row"></div>
-            <h1>¡Contactate con nosotros!</h1>
+            <h1><strong>¡Contactate con nosotros!</strong></h1>
             <section class="contactoForm">
             <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" id="comentario">
-                <h2>Datos personales</h2><br><br>
-                <label for="name">Nombre</label>
+                <h2><strong>Datos personales</strong></h2>
+                <label for="name">Nombre:</label>
                 <input type="text" name="name"><br><br>
-                <label for="lastname">Apellido</label>
+                <label for="lastname">Apellido:</label>
                 <input type="text" name=lastname><br><br>
-                <label for="telefono">Telefono</label>
+                <label for="telefono">Telefono:</label>
                 <input type="tel" name=telefono><br><br>
-                <label for="email">E-mail</label>
+                <label for="email">E-mail:</label>
                 <input type="email" name=email required><br><br>
-                <p>¿Cual es tu nivel de experiencia andando en bicicleta?</p><br>
-                <p>Principiante - Medio - Avanzado</p><br>
+                <p style="font-size:28px;">¿Cual es tu nivel de experiencia andando en bicicleta?</p><br>
+                <p style="font-size: 25px;">Principiante - Medio - Avanzado</p><br>
                 <input type="range" style="width: 70%"><br>
-                <label for="comentario">Dejanos un comentario</label><br>
                 <div class="form-group" style="padding-left: 15%; padding-right: 15%">
-                    <label for="comment">Comentario:</label>
+                    <label for="comment">Dejanos tu comentario:</label>
                     <textarea class="form-control" rows="8" id="comment"></textarea>
                 </div>
                 <button type="button" class="btn btn-success btn-lg">Enviar</button><br><br>

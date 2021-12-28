@@ -4,60 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas</title>
-    <link rel="stylesheet" href="./preguntas.css">
+    <title>CalchaBike</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="media/logo.jpg" alt="logo"></a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="preguntas.html">Preguntas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md" style="background-color: black;">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="./media/logo.jpg" alt="logo"></a></li>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: rgb(186, 189, 150,0.5);">
+                <span class="navbar-toggler-icon" style="background-color: black;"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinos.html">Destinos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="preguntas.html">Preguntas</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <Main>
-        <section id="preguntas">
-            <h2>¡Preguntas frecuentes!</h2>
-            <br><br>
-            <h4>¿Lorem ipsum dolor sit amet?</h4><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <br>
-            <h4>¿Lorem ipsum dolor sit amet?</h4><br>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <br>
-            <h4>¿Lorem ipsum dolor sit amet?</h4><br>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <br>
-            <h4>¿Lorem ipsum dolor sit amet?</h4><br>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque modi exercitationem, officia labore voluptatem reiciendis?</p>
-            <br>
-        </section>
-        <section class="preguntaForm">
-            <h2>¿Te quedaste con alguna duda?</h2><br>
-            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" id="consulta">
-                <label for="name">Nombre:</label><br>
-                <input type="text" name="name"><br>
-                <label for="email">E-mail:</label><br>
-                <input type="email" name="email" required><br>
-                <label for="text" >¿Que te gustaria saber?:</label><br>
-                <textarea name="consulta" id="consulta" cols="50" rows="6" maxlength="200"></textarea><br><br>
-                <input class="botonS" type="submit" value="Enviar consulta">
-            </form>
-            <br><br>
-        </section>
-        </Main>
 
-        <footer>
-            <div id="redesSociales">
-                <ul>
-                    <li><a href="index.html"><img class="logoFooter" src="media/logo.jpg" alt="logo"></a></li>
-                    <li><a href="https://www.facebook.com/pages/category/Sports---Recreation/CalchaBike-Cicloturismo-100533291534790/"><img class="redes" src="./media/fb.png" alt="Facebook"></li></a>
-                    <li><a href="https://www.instagram.com/calchabike/?hl=es"><img class="redes" src="./media/ig.png" alt="Instagram"></li></a>
-                </ul>
-        </footer>
-</body>
-</html>
+
+    <Main>
+        <div class="preguntasFrecuentes container text-center">
+            <div class="row">
+                <div class="col-12  animate__animated animate__backInDown"><h1><strong>¡Preguntas frecuentes!</strong></h1></div>
+                <br><br>
+                <div class="pregunta col-12 animate__animated animate__backInRight animate__delay-1s" style="padding-bottom: 20px;"><h4>¿Cuantos dias duran aproximadamente las travesias?</h4></div>
+                <div class="col-10 offset-1 animate__animated animate__backInLeft animate__delay-1s"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quaerat veritatis consequuntur repudiandae, officiis officia aliquid, velit voluptates eaque illo inventore ipsum dolore dolor repellat!</p></div>
+                <br>
+                <div class="pregunta col-12 animate__animated animate__backInRight animate__delay-1s" style="padding-bottom: 20px;"><h4>¿Cuales son las actividades habituales?</h4></div>
+                <div class="col-10 offset-1 animate__animated animate__backInLeft animate__delay-1s"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatibus ad aut nihil modi. Rem cumque debitis at eos ut expedita quae fugit facilis illum culpa quod optio ex, rerum quia corrupti voluptatum dolore repudiandae officiis ad asperiores iste sit!</p></div>
+                <br>
+                <div class="pregunta col-12 animate__animated animate__backInRight animate__delay-1s" style="padding-bottom: 20px;"><h4>¿De hasta cuantas personas puede ser el grupo?</h4></div>
+                <div class="col-10 offset-1 animate__animated animate__backInLeft animate__delay-1s"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quidem temporibus blanditiis perferendis quas deleniti cumque. Blanditiis maiores quisquam ex?</p></div>
+                <br>
+                <div class="pregunta col-12 animate__animated animate__backInRight animate__delay-1s" style="padding-bottom: 20px;"><h4>¿Cualquier persona puede ir?</h4></div>
+                <div class="col-10 offset-1 animate__animated animate__backInLeft animate__delay-1s"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias iure eius, ducimus quod reprehenderit fugit velit adipisci quo qui voluptatem, aperiam voluptatum explicabo, obcaecati sequi!</p></div>
+                <br>
+            </div>
+        </div>
+
+<!-- Formulario consulta -->
+        <section class="informacion container col-10 col-sm-9 col-md-7 col-lg-6 col-xl-5 animate__animated animate__backInUp" style="margin-top: 40px;">
+            <div class="row"></div>
+                <h1>¡Contactate con nosotros!</h1>
+                <section class="preguntaForm">
+                <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" id="comentario">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name"><br><br>
+                    <label for="email">E-mail</label>
+                    <input type="email" name=email required><br><br>
+                    <label for="comentario">¿Que te gustaria saber?</label><br>
+                    <div class="form-group" style="padding-left: 15%; padding-right: 15%">
+                        <label for="comment">Consulta:</label>
+                        <textarea class="form-control" rows="8" id="comment"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success btn-lg">Enviar</button><br><br>
+        </section>
+<!-- Formulario consulta - fin -->
+    </Main>
+
+    <footer>
+        <div id="redesSociales container col-12">
+            <ul>
+                <li><a href="index.html"><img class="logoFooter" src="media/logo.jpg" alt="logo"></a></li>
+                <li><a href="https://www.facebook.com/pages/category/Sports---Recreation/CalchaBike-Cicloturismo-100533291534790/"><img class="redes" src="./media/fb.png" alt="Facebook"></li></a>
+                <li><a href="https://www.instagram.com/calchabike/?hl=es"><img class="redes" src="./media/ig.png" alt="Instagram"></li></a>
+            </ul>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
+    </body>
+    </html>
