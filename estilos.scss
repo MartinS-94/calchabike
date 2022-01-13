@@ -5,7 +5,8 @@
 
 // Variables
 
-$color1: rgb(186, 189, 150,0.5);
+$color1: rgba(186, 189, 150, 0.5);
+// $color1: black; - fondo de prueba
 
 $color2: rgb(34, 92, 37);
 
@@ -15,6 +16,11 @@ $font1: 'Roboto', sans-serif;
 
 $border1: 2px solid #5c4401;
 
+$nivel: (
+    dif1: #35a800,
+    dif2: orange,
+    dif3: red,
+);
 
 
 // fin Variables
@@ -40,22 +46,25 @@ body{
     background-color: $color1;
 }
 
+@mixin atributos($padding, $color) {
+    padding: $padding;
+    color: $color;
+}
+
 h1{
+    @include atributos(20px, $color2)
     font-family: $font1;
     font-size: 50px;
-    color: $color2;
-    padding: 20px;
 }
 
 h2{
-    font-family: $font1;
-    font-size:40px;
-    color: $color2;
-    padding: 20px;
+    @extend h1;
+    font-size: 40px;
 }
 
 p{
     font-family: $font1;
+    // color: white; - color de prueba
 }
 
 // fin General //
@@ -68,6 +77,9 @@ section.informacion{
     margin-bottom: 40px;
     background-color: $color3;
     font-family: $font1;
+    margin-top:40px; 
+    padding-bottom: 30px; 
+    padding-top: 30px;
         .tForm{
             padding-top: 20px;
         }
@@ -90,6 +102,10 @@ section.informacion{
 
         .btn:hover{
             transform: scale(1.05);
+        }
+
+        .btn{
+            margin-top: 25px;
         }
 }
 
@@ -130,25 +146,29 @@ footer{
 // pagina "Destinos" //
 
 .container{
-    .difPrincipiante{
-        color:rgb(53, 168, 0);
-        font-size: 20px;
-    }
-
-    .difMedia{
-        color: orange;
-        font-size: 20px;
-    }
-
-    .difAvanzada{
-        color:red;
-        font-size: 20px;
-    }
-
     .dificultad:hover{
         transform: scale(1.3);
         transition: 1s;
     }
+}
+
+@each $dif, $color in $nivel {
+    .dif--#{$dif} {
+        color: $color;
+        font-size: 20px;
+    }
+}
+
+
+// Fin pagina "Destino" //
+
+
+// Inicio pagina "Nosotros" //
+
+.imgNosotros{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 // Fin pagina "Destino" //

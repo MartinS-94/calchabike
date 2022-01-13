@@ -9,27 +9,26 @@ nav a {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
+
 nav li a:hover {
   color: orangered;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body {
   background-color: rgba(186, 189, 150, 0.5);
 }
 
-h1 {
+h1, h2 {
+  padding: 20px;
+  color: #225c25;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
-  color: #225c25;
-  padding: 20px;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 40px;
-  color: #225c25;
-  padding: 20px;
 }
 
 p {
@@ -42,10 +41,15 @@ section.informacion {
   margin-bottom: 40px;
   background-color: rgba(248, 231, 210, 0.8);
   font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
+
 section.informacion .tForm {
   padding-top: 20px;
 }
+
 section.informacion input, section.informacion label {
   display: block;
   margin: auto;
@@ -53,55 +57,89 @@ section.informacion input, section.informacion label {
   font-size: 22px;
   width: 85%;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   border-radius: 3px;
 }
-section.informacion input[type=text], section.informacion input[type=email], section.informacion input[type=tel] {
+
+section.informacion input[type="text"], section.informacion input[type="email"], section.informacion input[type="tel"] {
   border-bottom: 2px solid #5c4401;
 }
+
 section.informacion .btn:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+section.informacion .btn {
+  margin-top: 25px;
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 120px;
   background-color: black;
 }
+
 footer ul {
   list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 45px;
 }
+
 footer .redes {
   width: 60px;
 }
+
 footer .redes:hover {
-  transform: scale(1.2);
-}
-footer .logoFooter:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-.container .difPrincipiante {
-  color: #35a800;
-  font-size: 20px;
+footer .logoFooter:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
-.container .difMedia {
-  color: orange;
-  font-size: 20px;
-}
-.container .difAvanzada {
-  color: red;
-  font-size: 20px;
-}
+
 .container .dificultad:hover {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
+.dif--dif1 {
+  color: #35a800;
+  font-size: 20px;
+}
+
+.dif--dif2 {
+  color: orange;
+  font-size: 20px;
+}
+
+.dif--dif3 {
+  color: red;
+  font-size: 20px;
+}
+
+.imgNosotros {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 /*# sourceMappingURL=estilos.css.map */

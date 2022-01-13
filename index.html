@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalchaBike</title>
+    <meta name="description" content="Nos dedicamos a crear experiencias nuevas, vivir aventuras unicas y conocer lugares de una manera totalmente diferente. Excelente gastronomia, paisajes y por sobre todo, amistades! Todo esto sobre dos ruedas.">
+    <meta name="keywords" content="BICICLETA, BIKE, MONTANBIKE, GASTRONOMIA, TUCUMAN, TAFI DEL VALLE, AVENTURA, VINO, BODEGA, EXPERIENCIAS, DESAFIO">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -14,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-md" style="background-color: black;">
             <!-- Brand -->
-            <a class="navbar-brand" href="index.html"><img src="./media/logo.jpg" alt="logo"></a></li>
+            <a class="navbar-brand" href="index.html"><img src="./media/logo.jpg" alt="logo"></a>
 
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: rgb(186, 189, 150,0.5);">
@@ -24,16 +26,16 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="destinos.html">Destinos</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="preguntas.html">Preguntas</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preguntas.html">Preguntas</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,14 +44,14 @@
 
     <main>
         <section>
-            <img class="portada col-12 text-center img-responsive" src="./media/principal.jpg" alt="Portada">
+            <img class="portada col-12 text-center img-responsive" src="./media/principal.jpg" alt="Portada" style="padding:0;">
             <!-- <h1 class="titulo col-12">CalchaBike</h1> -->
         </section>
         <div class="experiencias container">
             <div class="row">
                 <div class="text-center col-12 animate__animated animate__heartBeat animate__delay-1s animate__repeat-3"><h2 style="font-size: 50px;"><strong>¡Experiencias!</strong></h2></div>
                 
-                <div class="card col-xs-12 col-sm-4 col-md-4">
+                <div class="card col-xs-10 col-sm-12 col-md-4">
                     <img class="card-img-top" src="./media/persona1.jpg" alt="Card image">
                     <div class="card-body">
                         <h4 class="card-title">Alejandra P.</h4>
@@ -57,7 +59,7 @@
                     </div>
                 </div>
 
-                <div class="card col-xs-12 col-sm-4 col-md-4">
+                <div class="card col-xs-10 col-sm-12 col-md-4">
                     <img class="card-img-top" src="./media/persona2.jpg" alt="Card image">
                     <div class="card-body">
                         <h4 class="card-title">Alejandra P.</h4>
@@ -65,29 +67,30 @@
                     </div>
                 </div>
 
-                <div class="card col-xs-12 col-sm-4 col-md-4">
+                <div class="card col-xs-10 col-sm-12 col-md-4">
                     <img class="card-img-top" src="./media/persona1.jpg" alt="Card image">
                     <div class="card-body">
                         <h4 class="card-title">Alejandra P.</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia eos placeat ad quidem neque exercitationem ea perferendis, adipisci rem!</p>
                     </div>
+                </div>
             </div>
+        </div>
 
-            
-        </div><br><br>
-        <section class="informacion container col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-6" style="padding-bottom: 30px; padding-top: 30px;">
-            <div class="row"></div>
-                <h2 class="tForm"><strong>¿Queres recibir mas información?</strong></h2>
-                <h2><strong>¡Subscríbete!</strong></h2><br>
+        <section class="informacion container col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+            <div class="row">
                 <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-                    <label for="name">Nombre:</label><br>
-                    <input type="text" name="name"><br>
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" name="email" required><br><br>
-                    <button type="button" class="btn btn-success btn-lg">Subscribir</button><br><br>
+                    <h2 class="tForm"><strong>¿Queres recibir mas información?</strong></h2>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" required>
+                    <button type="button" class="btn btn-success btn-lg">Subscribirse</button>
                 </form>
+            </div>
         </section>
     </main>
+
     <footer>
         <div id="redesSociales container col-12">
             <ul>
@@ -95,6 +98,7 @@
                 <li><a href="https://www.facebook.com/pages/category/Sports---Recreation/CalchaBike-Cicloturismo-100533291534790/"><img class="redes" src="./media/fb.png" alt="Facebook"></li></a>
                 <li><a href="https://www.instagram.com/calchabike/?hl=es"><img class="redes" src="./media/ig.png" alt="Instagram"></li></a>
             </ul>
+        </div>
     </footer>
 
 
