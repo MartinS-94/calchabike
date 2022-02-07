@@ -30,10 +30,12 @@ h1, h2 {
   color: #225c25;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
+  text-shadow: -1px 0 black, 0 1px black;
 }
 
 h2 {
   font-size: 40px;
+  text-shadow: -1px 0 black, 0 1px black;
 }
 
 p {
@@ -105,7 +107,8 @@ footer .logoFooter:hover {
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .container #primerDestino, .container #segundoDestino, .container #tercerDestino {
   margin-bottom: 50px;
@@ -130,18 +133,41 @@ footer .logoFooter:hover {
   font-size: 20px;
 }
 
-.imgNosotros {
+.nosotrosPortada {
+  padding: 0px;
+}
+
+.nosotros {
+  margin: 20px;
+}
+.nosotros .imgNosotros {
   margin-right: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
 
+.fotosPregunta {
+  width: 100%;
+  height: 100%;
+  background-image: url("./media/fotoCerro.jpg");
+  background-size: cover;
+}
+
 .pregunta {
   padding-bottom: 5px;
+  text-shadow: -1px 0 black, 0 1px black;
 }
 
 .respuesta {
+  text-shadow: -1px 0 black, 0 1px black;
   padding-bottom: 20px;
+}
+
+.fotosContacto {
+  width: 100%;
+  height: 100%;
+  background-image: url("./media/fotoVista.jpg");
+  background-size: cover;
 }
 
 .preguntaExperiencia {
