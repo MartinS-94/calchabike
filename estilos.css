@@ -147,10 +147,11 @@ footer .logoFooter:hover {
 }
 
 .fotosPregunta {
-  width: 100%;
+  width: auto;
   height: 100%;
   background-image: url("./media/fotoCerro.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .pregunta {
@@ -164,10 +165,11 @@ footer .logoFooter:hover {
 }
 
 .fotosContacto {
-  width: 100%;
+  width: auto;
   height: 100%;
   background-image: url("./media/fotoVista.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .preguntaExperiencia {
